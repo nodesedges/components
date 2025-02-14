@@ -1,0 +1,1 @@
+clang -o extismPlugin.wasm --target=wasm32-unknown-unknown -nostdlib -Wl,--no-entry -mexec-model=reactor -Wl,--export=test,--export=GetDescription,--export=run_test ./plugin.c
